@@ -36,7 +36,16 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  my_new_project:
-    # Applies to all files under models/example/
+  prueba_package:
     example:
       +materialized: table
+
+  package_snowflake_finops:
+    +database: "DEV_FINOPS_DB_PACK"
+    +materialized: table
+    bronze:
+      +schema: "FINOPS_BRONZE"
+    silver:
+      +schema: "FINOPS_SILVER"
+    gold:
+      +schema: "FINOPS_GOLD"
