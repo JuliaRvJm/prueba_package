@@ -40,7 +40,7 @@ models:
     example:
       +materialized: table
 
-  civica_snowflake_finops:
+  package_snowflake_finops:
     +database: "DEV_FINOPS_DB_PACK"
     +materialized: table
     bronze:
