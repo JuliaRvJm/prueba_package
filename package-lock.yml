@@ -1,0 +1,6 @@
+packages:
+  - git: https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/JuliaRvJm/civica_snowflake_finops.git
+    revision: 34b9c51b35ec5c215463aa3a3a6108f626f4ebdf
+  - package: calogica/dbt_date
+    version: 0.10.1
+sha1_hash: b8214412809d5c6ae0798b0cd550f08b67c72dbd
